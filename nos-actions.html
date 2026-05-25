@@ -37,6 +37,11 @@
   }
   .kn-pole-body .t-label { display: block; margin-bottom: 10px; }
   .kn-pole-body .t-h3 { margin-bottom: 14px; font-size: clamp(20px, 2.5vw, 28px); }
+  .kn-pole-card--visual { grid-template-columns: 120px 1fr 220px; }
+  @media (max-width: 820px) {
+    .kn-pole-card--visual { grid-template-columns: 120px 1fr; }
+    .kn-pole-card--visual .kn-img-frame { display: none; }
+  }
   @media (max-width: 640px) {
     .kn-pole-card { grid-template-columns: 1fr; }
     .kn-pole-num { display: none; }
@@ -105,7 +110,7 @@
 <!-- NAV -->
 <nav class="kn-nav">
   <div class="container">
-    <a href="index.html" class="kn-brand">KONKRET<span>Konbit Kreye Travay</span></a>
+    <a href="index.html" class="kn-brand"><img src="wp-content/uploads/brizy/imgs/KONKRET-LOGO-RE-301x100x0x25x301x51x1749174210.png" alt="Konkret" class="kn-brand-logo"><span>Konbit Kreye Travay</span></a>
     <ul class="kn-links">
       <li><a href="a-propos.html">Qui Sommes-Nous</a></li>
       <li><a href="nos-actions.html" class="active">Programmes</a></li>
@@ -148,12 +153,15 @@
     <div style="margin-top: 40px;">
 
       <!-- Pole 01 -->
-      <div class="kn-pole-card">
+      <div class="kn-pole-card kn-pole-card--visual">
         <div class="kn-pole-num" style="color: rgba(26,171,77,.15);">01</div>
         <div class="kn-pole-body" style="border-top: 4px solid var(--voice-green);">
           <span class="t-label" style="color: var(--voice-green);">Pôle 01</span>
           <h3 class="t-h3">Emploi Jeunesse</h3>
           <p class="t-body" style="font-size: 14px; max-width: 720px;">Offres de travail agricole, formation et accompagnement pour jeunes de 18-35 ans. Chaque participant est placé dans une ferme partenaire avec un salaire régulier, des repas inclus et une certification à la sortie. L'emploi n'est pas une promesse, c'est le point de départ.</p>
+        </div>
+        <div class="kn-img-frame" style="min-height:180px;">
+          <img src="wp-content/uploads/brizy/imgs/d03-Img-Brocoli-516x808x0x0x516x808x1750980974.jpg" alt="Production maraîchère KONKRET" loading="lazy">
         </div>
       </div>
 
@@ -252,8 +260,11 @@
         <a href="summer-2026.html" class="btn-green">Voir le Programme</a>
       </div>
 
-      <!-- Right: stats box -->
+      <!-- Right: image + stats box -->
       <div>
+        <div class="kn-img-frame" style="margin-bottom: 2px; height: 220px;">
+          <img src="wp-content/uploads/brizy/imgs/5-1-818x632x0x26x818x568x1749174747.png" alt="Produits KONKRET" loading="lazy">
+        </div>
         <div class="kn-stats-box">
           <div class="kn-stat-box-item">
             <div class="kn-stat-box-n">21</div>

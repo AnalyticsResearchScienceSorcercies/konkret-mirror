@@ -682,3 +682,62 @@ a { color: inherit; }
 .text-center { text-align: center; }
 .max-640 { max-width: 640px; }
 .max-720 { max-width: 720px; }
+
+/* --- NAV LOGO --- */
+.kn-brand-logo {
+  height: 30px;
+  width: auto;
+  display: block;
+}
+
+/* --- HERO SPLIT (homepage two-column) --- */
+.kn-hero-split {
+  justify-content: flex-start;
+  text-align: left;
+  padding-right: 0;
+  gap: 48px;
+}
+.kn-hero-split .kn-hero-content {
+  flex: 1 1 480px;
+  max-width: 600px;
+}
+.kn-hero-split .kn-hero-actions { justify-content: flex-start; }
+.kn-hero-visual {
+  flex: 0 0 320px;
+  align-self: stretch;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  min-height: 460px;
+}
+.kn-hero-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+}
+@media (max-width: 900px) {
+  .kn-hero-split { flex-direction: column; text-align: center; gap: 32px; }
+  .kn-hero-split .kn-hero-actions { justify-content: center; }
+  .kn-hero-visual { flex: 0 0 auto; width: 100%; min-height: 260px; max-height: 340px; }
+}
+
+/* --- IMAGE BLOCKS --- */
+.kn-img-full {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+.kn-img-frame {
+  overflow: hidden;
+  background: #111;
+}
+.kn-img-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform .4s ease;
+}
+.kn-img-frame:hover img { transform: scale(1.03); }
