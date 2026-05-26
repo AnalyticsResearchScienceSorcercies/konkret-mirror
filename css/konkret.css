@@ -742,6 +742,19 @@ a { color: inherit; }
 }
 .kn-img-frame:hover img { transform: scale(1.03); }
 
+/* --- EMPLOYER / HIRE INLINE LINK --- */
+a.kn-hire {
+  color: #ff6a1f;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255,106,31,.35);
+  transition: border-color .2s, color .2s;
+  font-weight: inherit;
+}
+a.kn-hire:hover {
+  color: #ff8c4a;
+  border-bottom-color: rgba(255,106,31,.85);
+}
+
 /* --- PHOTO GALLERY SECTIONS --- */
 .kn-gallery-section {
   padding: 56px 0 72px;
